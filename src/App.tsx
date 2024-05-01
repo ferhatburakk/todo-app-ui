@@ -24,7 +24,6 @@ function App() {
   const [todos, setTodos] = useState<TodoType[]>([]);
   const [rows, setRows] = useState([]);
 
-
   const completeById = (userId: number, todoId: number) => {
     const url = `http://localhost:8080/user/complete/${userId}/${todoId}`;
 
